@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/MenuSign"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Breakfast Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/HintView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/MenuSign"
+        android:layout_marginTop="18dp"
+        android:text="Tap to add item (Edit order at checkout)" />
+
+    <TextView
+        android:id="@+id/FoodView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/HintView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Food"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/ToastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/PoachedEggButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/PoachedEggButton"
+        android:layout_below="@+id/PoachedEggButton"
+        android:text="Toast"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/DrinksView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FoodView"
+        android:layout_alignStart="@+id/FoodView"
+        android:layout_below="@+id/ToastButton"
+        android:layout_marginTop="19dp"
+        android:text="Drinks"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/BaconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FoodView"
+        android:elevation="6dp"
+        android:text="Bacon Sandwhich    "
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/ScrambledEggButton"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignEnd="@+id/BaconButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/BaconButton"
+        android:layout_below="@+id/BaconButton"
+        android:text="Scrambled egg on toast  "
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/PoachedEggButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ScrambledEggButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/ScrambledEggButton"
+        android:layout_below="@+id/ScrambledEggButton"
+        android:text="Poached Egg"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/CapuccinoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ToastButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/ToastButton"
+        android:layout_below="@+id/DrinksView"
+        android:text="Cappuccino"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/TeaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/CapuccinoButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/CapuccinoButton"
+        android:layout_below="@+id/CapuccinoButton"
+        android:text="Tea"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/BaconPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/BaconButton"
+        android:layout_alignBottom="@+id/BaconButton"
+        android:layout_alignEnd="@+id/HintView"
+        android:layout_alignRight="@+id/HintView"
+        android:text="£3.00"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/ScrambledPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/ScrambledEggButton"
+        android:layout_alignBottom="@+id/ScrambledEggButton"
+        android:layout_alignLeft="@+id/BaconPriceView"
+        android:layout_alignStart="@+id/BaconPriceView"
+        android:text="£3.00"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/PoachedPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/PoachedEggButton"
+        android:layout_alignBottom="@+id/PoachedEggButton"
+        android:layout_alignLeft="@+id/ScrambledPriceView"
+        android:layout_alignStart="@+id/ScrambledPriceView"
+        android:text="£3.00"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/ToastPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/ToastButton"
+        android:layout_alignBottom="@+id/ToastButton"
+        android:layout_alignLeft="@+id/PoachedPriceView"
+        android:layout_alignStart="@+id/PoachedPriceView"
+        android:text="£3.00"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/CappuccinoPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/CapuccinoButton"
+        android:layout_alignBottom="@+id/CapuccinoButton"
+        android:layout_alignLeft="@+id/ToastPriceView"
+        android:layout_alignStart="@+id/ToastPriceView"
+        android:text="£1.40"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/TeaPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/TeaButton"
+        android:layout_alignBottom="@+id/TeaButton"
+        android:layout_alignLeft="@+id/CappuccinoPriceView"
+        android:layout_alignStart="@+id/CappuccinoPriceView"
+        android:text="£1.00"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/HintView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_alignTop="@+id/BaconButton"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_alignTop="@+id/ScrambledPriceView"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/ToastButton"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/ToastButton"
+        android:layout_toEndOf="@+id/MenuSign"
+        android:layout_toRightOf="@+id/MenuSign"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/imageButton6"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton5"
+        android:layout_below="@+id/CapuccinoButton"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/MenuSign"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+</RelativeLayout>

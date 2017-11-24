@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/boxshape"
+    android:layout_gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/InfoPopUp"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="  1.First Name and Last name must contain only \n     letters.
+                        \n
+                        \n  2.Email must contain an '@' symbol
+                        \n
+                        \n  3.Phone number must be your mobile and only \n      contain numbers 0-9.
+                        \n
+                        \n  4.Username must contain at least 6 characters.
+                        \n
+                        \n  5.Password must contain at least 6 characters.
+                        \n
+                        \n  6.Password confirmation must match password \n      previously given.
+
+"
+
+
+        android:textColor="@android:color/black" />
+</RelativeLayout>
